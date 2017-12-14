@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/litlw/OCADU-GM-Dashboard/issues"
   },
-  "homepage": "https://github.com/litlw/OCADU-GM-Dashboard#readme"
+  "homepage": "https://github.com/litlw/OCADU-GM-Dashboard#readme",
+  "dependencies": {
+    "d3-node": "^1.1.3"
+  }
 }
