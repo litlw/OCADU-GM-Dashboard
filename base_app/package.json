@@ -1,0 +1,16 @@
+{
+  "name": "base_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hugh Ritchie",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "bootstrap": "^3.3.7",
+    "d3": "^4.12.2"
+  }
+}
