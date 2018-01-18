@@ -11,7 +11,7 @@ Datatype: json
 Structure:
 <code>
 json: {
-  nodes: [{
+  tastes: [{
     id: "the page id (basically)"
     name: "the page name",
     value(s): [{
@@ -22,6 +22,12 @@ json: {
       Repeat for as many ids as we have.
       Use python, don't write this by hand.
       }]
+    }],
+  links: [{
+    user_id: "some id",
+    strength: "score 1 + score 2 / 2"
+    source: "taste",
+    target: "taste"
     }]
 }
 </code>
