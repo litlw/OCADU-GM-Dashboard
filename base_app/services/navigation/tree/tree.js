@@ -9,7 +9,7 @@ app.factory("treeDiagram", () => {
       var treeM = [20, 20, 20, 20],
         totalVisitors = 200,
         rectWidth = 100,
-        xScale = d3.scale.linear().domain([0, 1218895]).range([0, rectWidth]),
+        xScale = d3.scaleLinear().domain([0, 1218895]).range([0, rectWidth]),
         rectHeight = 30,
         currentSelectionId = "Home",
         currentPage,

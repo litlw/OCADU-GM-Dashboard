@@ -28,7 +28,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="node_modules/d3/build/d3.min.js"></script>
+    <script src="node_modules/d3-scale/build/d3-scale.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body ng-app="globeApp">
@@ -39,8 +41,8 @@
       <svg></svg>
       <div class="container-fluid">
           <div class="row content">
-            <taste-directive fn="taste_fn()"></taste-directive>
-            <page-selection-directive fn="page_fn()"></page-selection-directive>
+            <taste-directive fn="taste_fn"></taste-directive>
+            <page-selection-directive fn="page_fn"></page-selection-directive>
           </div>
         </div>
 

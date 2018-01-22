@@ -3,7 +3,7 @@
 app.factory('barchart', ()=>{
   return {
     makeChart : (id, callback)=>{
-      var tastesWidth = document.getElementById(id).offsetWidth,
+      var tastesWidth = document.getElementById("hierarchy").offsetWidth,
       tastesHeight = document.getElementById(id).offsetHeight * 0.73;
 
       var sortBy = "size";
