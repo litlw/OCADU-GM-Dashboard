@@ -1,17 +1,8 @@
-app.controller("mainController", ['$scope', 'treeDiagram', 'barchart',
-  function($scope, treeDiagram, barchart){
+app.controller("mainController", ['$scope',
+  function($scope){
   // some stuff will go in here.
   $scope.hello = "Hello World!"
-  $scope.taste_fn = (id)=>{
-    barchart.makeChart("hierarchy", ()=>{
-      console.log('made a chart');
-    })
-  };
-  $scope.page_fn = (id)=>{
-    treeDiagram.makeTree("tastes", ()=>{
-      console.log('made a tree');
-    })
-  }
+
 }]);
 
 

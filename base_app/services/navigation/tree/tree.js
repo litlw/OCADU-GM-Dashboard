@@ -1,6 +1,6 @@
 // Tree Diagram made by Afrooz Samaei
 
-app.factory("treeDiagram", () => {
+app.factory("treeDiagram", ['drawBars',(drawBars) => {
   return {
     makeTree: (id, callback) => {
       var treeWidth = document.getElementById(id).offsetWidth,
@@ -317,7 +317,7 @@ app.factory("treeDiagram", () => {
       function pageSelect(d) {
 
         if (d.id != currentSelectionId) {
-          DrawBars(d);
+          drawBars(d, categories);
           currentSelectionId = d.id;
           currentPage = d;
         }
@@ -336,4 +336,4 @@ app.factory("treeDiagram", () => {
 
     }
   }
-})
+}])

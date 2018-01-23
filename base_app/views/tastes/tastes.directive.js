@@ -1,4 +1,4 @@
-app.directive('tasteDirective', ['barchart', (barchart)=>{
+app.directive('tasteDirective', ['chartSetup', (chartSetup)=>{
   return {
     restrict: 'E',
     templateUrl: 'views/tastes/tastes.template.html',
@@ -8,7 +8,7 @@ app.directive('tasteDirective', ['barchart', (barchart)=>{
     },
     link: function(scope){
       //
-      barchart.makeChart("right", ()=>{
+      chartSetup.makeChart("right", ()=>{
         console.log("made a chart");
       })
     }

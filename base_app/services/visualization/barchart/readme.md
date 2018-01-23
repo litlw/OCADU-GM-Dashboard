@@ -11,4 +11,8 @@ Changes:
 
 - adding dynamic creation of Divs used in visualization
 
+- divided script into 4 reusable parts
+
+- getting the script to run properly...
+
 - importing update from Afrooz
