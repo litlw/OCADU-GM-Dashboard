@@ -3,8 +3,30 @@
 app.factory('barchart', ()=>{
   return {
     makeChart : (id, callback)=>{
-      var tastesWidth = document.getElementById("hierarchy").offsetWidth,
+      var tastesWidth = document.getElementById(id).offsetWidth,
       tastesHeight = document.getElementById(id).offsetHeight * 0.73;
+      var html = [
+        // '<div id="tastes">',
+        '<div id="title"></div>',
+        '<div id="legend"></div>',
+        '<div id="radio-selection">',
+        '<label class="radio-container"> Sort by Size',
+        '<input type="radio" checked="checked" name="radio" value="size">',
+        '<span class="checkmark"></span>',
+        '</label>',
+        '<label class="radio-container"> Sort by Score',
+        '<input type="radio" name="radio" value="score">',
+        '<span class="checkmark"></span>',
+        '</label>',
+        '</div>'
+        // '</div>'
+      ].join('');
+
+      element = document.createElement('div');
+        element.setAttribute('id', 'tastes');
+        element.innerHTML = html;
+        document.getElementById(id).appendChild(element);
+
 
       var sortBy = "size";
 

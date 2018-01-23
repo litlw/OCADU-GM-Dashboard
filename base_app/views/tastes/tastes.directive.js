@@ -1,4 +1,4 @@
-app.directive('tasteDirective', ['treeDiagram', (treeDiagram)=>{
+app.directive('tasteDirective', ['barchart', (barchart)=>{
   return {
     restrict: 'E',
     templateUrl: 'views/tastes/tastes.template.html',
@@ -7,8 +7,9 @@ app.directive('tasteDirective', ['treeDiagram', (treeDiagram)=>{
       fn: '='
     },
     link: function(scope){
-      treeDiagram.makeTree("right", ()=>{
-        console.log("made a tree");
+      //
+      barchart.makeChart("right", ()=>{
+        console.log("made a chart");
       })
     }
   }

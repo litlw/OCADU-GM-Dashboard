@@ -133,6 +133,9 @@ app.factory("treeDiagram", () => {
           .on("click", function(d) {
             toggle(d);
             update(d);
+            // if(callback){
+            //
+            // }
             pageSelect(d)
           });
 

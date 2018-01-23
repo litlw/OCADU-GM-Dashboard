@@ -37,12 +37,10 @@
 
     <div ng-controller="mainController">
       <nav-directive links="links"></nav-directive>
-      {{ hello }}
-      <svg></svg>
       <div class="container-fluid">
           <div class="row content">
-            <taste-directive fn="taste_fn"></taste-directive>
-            <page-selection-directive fn="page_fn"></page-selection-directive>
+            <page-selection-directive></page-selection-directive>
+            <taste-directive></taste-directive>
           </div>
         </div>
 
